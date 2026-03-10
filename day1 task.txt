@@ -1,0 +1,74 @@
+1. What is HTML?
+   HTML (Hyper Text Markup Language) it is used to create web pages.
+
+   History:
+   -->HTML was created by Tim Berners-Lee in 1991.
+   -->It was developed to share documents on the internet.
+
+   Why HTML is Used:
+   -->Structure web pages
+   -->Display text, images, videos
+   -->Create links between pages
+   -->Build websites and web applications
+   ex:
+   Google, Amazon, and Facebook.
+
+2.Understand <!DOCTYPE>, <html>, <head>, <body>. Create a simple HTML page.
+  
+    Tag	                Purpose
+<!DOCTYPE html>	  Defines the HTML version
+<html>	          Root element of the page
+<head>	          Contains page information
+<body>	          Contains visible content
+
+ex code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is my first HTML page.</p>
+</body>
+
+</html>
+
+Output:
+ -->Title appears in the browser tab
+ -->Text appears on the web page 
+
+3.Explore the root element <html>. Learn how it wraps the entire document.
+   -->The <html> tag is called the root element.
+   -->It wraps the entire webpage content.
+   ex:
+     <html>
+      <head>
+        <title>Example</title>
+      </head>
+
+      <body>
+        <h1>Hello</h1>
+      </body>
+     </html>
+
+4.Learn about container elements like <div>, <section>. Practice grouping content.
+    <div> Element:
+    <div> means division.
+   -->It is used to group content for layout and styling
+   ex:
+    <div>
+     <h2>About Us</h2>
+     <p>We provide good food.</p>
+    </div>
+
+   <section> Element:
+   <section> represents a separate part of a webpage.
+   ex:
+    <section>
+     <h2>Our Services</h2>
+     <p>We offer food delivery.</p>
+    </section>
+
+   

@@ -1,0 +1,87 @@
+1.Learn what semantic tags are and why they are important for SEO & accessibility. Compare semantic vs non-semantic tags.
+      Semantic tags clearly describe the meaning of the content inside them.
+      They help browsers, search engines, and screen readers understand the structure of the webpage.
+
+    Tag	             Meaning
+  <header>	Top section of a webpage
+  <nav>	        Navigation links
+  <main>	Main content area
+  <section>	Section of related content
+  <article>	Independent content (blog, news)
+  <aside>	Sidebar content
+  <footer>	Bottom section of a webpage
+
+Why Semantic Tags are Important:
+   SEO (Search Engine Optimization)
+   Search engines understand the page structure easily.
+ex:
+   <header> → page heading
+   <article> → important content
+   <footer> → page information
+
+Accessibility: 
+   Screen readers used by visually impaired users can understand the page structure.
+Ex:
+   Screen reader can jump directly to navigation or main content.
+
+    Semantic Tags	Non-Semantic Tags
+      <header>	            <div>
+      <footer>	            <span>
+      <article>	             <b>
+      <section>	             <i>
+
+sematic ex:                   
+  <header></header>                
+  <nav></nav>
+  <footer></footer>
+
+non-sematic ex:
+  <div class="header"></div>
+  <div class="menu"></div>
+  <div class="footer"></div>
+
+2.Practice creating a webpage with a header and footer. Add title, logo, and footer info.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dinesh Restaurant</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Dinesh Biryani Restaurant</h1>
+    <img src="logo.png" alt="Restaurant Logo" width="100">
+</header>
+
+<main>
+    <h2>Welcome to Our Restaurant</h2>
+    <p>We serve delicious and authentic biryani.</p>
+</main>
+
+<footer>
+    <p>Owner: Dinesh Kumar</p>
+    <p>Phone: 7904448512</p>
+    <p>Email: dinamoorthy@gmail.com</p>
+    <p>Opening Time: 10 AM - 10 PM</p>
+</footer>
+
+</body>
+</html>
+
+structure:
+
+<header>
+  Website title
+  Logo
+
+<main>
+  Welcome message
+
+<footer>
+  Name
+  Phone
+  Email
+  Copyright
+
+

@@ -1,0 +1,161 @@
+1. Learn difference between <b> (bold styling) and <strong> (semantic importance). Practice both in sentences.
+     --><b> → Only makes text bold (visual style).
+     --><strong> → Shows important text (semantic meaning + bold).
+
+   Practice sentence:
+     <p>Welcome to our <b>biryani shop</b>.</p>
+     <p>Please read our <strong>important instructions</strong> before ordering.</p>
+
+2. Understand <i> (italic styling) vs <em> (emphasis). Use them in a paragraph.
+   --><i> → Italic style only
+   --><em> → Emphasizes text (important stress)
+
+   Practice:
+     <p>
+        Our restaurant serves <i>traditional recipes</i> made with spices.
+        Our chef <em>carefully prepares</em> every dish to give the best taste.
+     </p>
+
+3. Practice underlining text with <u>, highlighting with <mark>, and making side notes with <small>
+   --><u> → Underline text
+   --><mark> → Highlight text
+   --><small> → Small side note text
+
+   ex:
+     <p><u>Special Offer Today!</u></p>
+     <p>Try our <mark>Chicken Dum Biryani</mark> today.</p>
+     <p>Price: ₹200 <small>(limited time offer)</small></p>
+
+4. Create hyperlinks using <a>. Add external links, internal links, and “back to top” links.
+     External link:
+        <a href="https://www.google.com">Visit Google</a>
+
+     Internal link:
+        <a href="about.html">Go to About Page</a>
+
+     Back to top link:
+        <a href="#top">Back to Top</a>
+
+     ex page:
+        <h1 id="top">Welcome to Our Restaurant</h1>
+        <p>Scroll down for more info.</p>
+        <a href="#top">Back to Top</a>
+
+5.Learn how <button> works inside forms and as clickable UI elements. Practice adding button text and attributes.
+    Buttons can be used in forms or UI elements.
+  ex:
+     <button>Order Now</button>
+     <button type="submit">Submit</button>
+     <button type="reset">Reset</button>
+  With attributes:
+     <button onclick="alert('Order placed!')">Place Order</button>
+
+6. Explore different input types (text, password, email, checkbox, radio). Build a mini form.
+   Common input types:
+      text
+      password
+      email
+      checkbox
+      radio
+
+   ex form:
+<form>
+
+Name:
+<input type="text">
+
+<br><br>
+
+Email:
+<input type="email">
+
+<br><br>
+
+Password:
+<input type="password">
+
+<br><br>
+
+Favorite Biryani:
+<input type="radio" name="biryani"> Chicken
+<input type="radio" name="biryani"> Mutton
+
+<br><br>
+
+Extra Items:
+<input type="checkbox"> Egg
+<input type="checkbox"> Raita
+
+<br><br>
+
+<button type="submit">Submit</button>
+
+</form>
+
+7. Learn how to use <textarea> for multi-line input. Practice making a feedback form.
+     Used for multi-line input:
+
+<form>
+
+Name:
+<input type="text">
+
+<br><br>
+
+Feedback:
+<br>
+<textarea rows="5" cols="30"></textarea>
+
+<br><br>
+
+<button>Send Feedback</button>
+
+</form>
+
+8. Combine formatting and interactive tags to create a styled feedback form (with bold labels, highlighted text, inputs, and buttons).
+    This example combines formatting + inputs + buttons:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+</head>
+
+<body>
+
+<h2><mark>Customer Feedback Form</mark></h2>
+
+<form>
+
+<p><strong>Name:</strong></p>
+<input type="text">
+
+<p><strong>Email:</strong></p>
+<input type="email">
+
+<p><strong>Password:</strong></p>
+<input type="password">
+
+<p><strong>Favorite Biryani:</strong></p>
+<input type="radio" name="biryani"> Chicken
+<input type="radio" name="biryani"> Mutton
+
+<p><strong>Add-ons:</strong></p>
+<input type="checkbox"> Egg
+<input type="checkbox"> Raita
+
+<p><u>Your Feedback</u></p>
+
+<textarea rows="5" cols="40"></textarea>
+
+<br><br>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+<p><small>Your feedback helps us improve our service.</small></p>
+
+</form>
+
+</body>
+</html>

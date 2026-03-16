@@ -1,0 +1,121 @@
+1.Learn what attributes are in HTML. Explore how they provide extra information about elements (e.g., href, src, alt).
+    Attributes provide extra information about HTML elements.
+    They are written inside the opening tag.
+  syntax:
+    <tag attribute="value">Content</tag>
+  ex:
+    <a href="https://www.google.com">Visit Google</a>
+  more ex:
+    <img src="biryani.jpg" alt="Delicious Biryani">
+    <p title="This is a tooltip">Move mouse here</p>
+
+2.Learn how to use class for styling multiple elements with CSS. Practice applying same class to multiple tags.
+    The class attribute is used to apply same CSS style to multiple elements.
+  ex:
+    <style>
+    .highlight{
+    color:red;
+    font-weight:bold;
+    }
+    </style>
+
+    <p class="highlight">This is important text</p>
+    <h2 class="highlight">Welcome to My Website</h2>
+
+3.Understand the uniqueness of id. Use it for styling and JavaScript targeting. Practice assigning unique IDs.
+   -->id must be unique for one element only.
+
+ Used for:
+    CSS styling
+    JavaScript targeting
+    Page navigation
+ ex:
+    <h1 id="mainTitle">My Website</h1>
+    <p id="about">This is about section</p>
+ css ex:
+    <style>
+    #mainTitle{
+    color:blue;
+    }
+    </style>
+
+4.Explore the title attribute (tooltip on hover) and practice with attributes like lang, style, and hidden.
+   title (tooltip):
+     <p title="I am tooltip text">Hover over me</p>
+   lang:
+     <html lang="en">
+   style:
+     <p style="color:green;">Green text</p>
+   hidden:
+     <p hidden>This text is hidden</p>
+
+5.Create hyperlinks with href. Practice absolute links (to external websites) and relative links (to local files).
+   Absolute Link (external website):
+      <a href="https://www.youtube.com">Open YouTube</a>
+   Relative Link (local file):
+      <a href="about.html">Go to About Page</a>
+
+6.Add attributes like target="_blank", download, mailto:. Create navigation between pages
+   Open in New Tab:
+      <a href="https://www.google.com" target="_blank">
+       Open Google
+      </a>
+   Download File:
+      <a href="file.pdf" download>Download PDF</a>
+   Email Link:
+      <a href="mailto:dinamoorthy@gmail.com">Send Email</a>
+
+7.Learn src and alt attributes. Insert images into a webpage.
+   src → image location
+   alt → alternative text for accessibility
+      <img src="biryani.jpg" alt="Chicken Biryani">
+
+8.Practice adding image dimensions (width, height), responsive images, and clickable images (image inside <a>).
+   Image with size:
+      <img src="biryani.jpg" alt="Biryani" width="300" height="200">
+   Clickable Image:
+      <a href="menu.html">
+      <img src="biryani.jpg" alt="View Menu" width="300">
+      </a>
+
+9.Create a webpage with navigation links, multiple sections using IDs, and images with proper alt text and titles.
+   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Biryani Restaurant</title>
+</head>
+
+<body>
+
+<h1 id="top">Dinesh Biryani House</h1>
+
+<nav>
+<a href="#home">Home</a> |
+<a href="#menu">Menu</a> |
+<a href="#contact">Contact</a>
+</nav>
+
+<hr>
+
+<h2 id="home">Home</h2>
+<p title="Welcome message">Welcome to our restaurant!</p>
+
+<img src="biryani.jpg" alt="Delicious Chicken Biryani" width="300">
+
+<h2 id="menu">Menu</h2>
+<p>Chicken Biryani</p>
+<p>Mutton Biryani</p>
+
+<h2 id="contact">Contact</h2>
+<p>Email: 
+<a href="mailto:dinamoorthy@gmail.com">
+dinamoorthy@gmail.com
+</a>
+</p>
+
+<a href="#top">Back to Top</a>
+
+</body>
+</html>

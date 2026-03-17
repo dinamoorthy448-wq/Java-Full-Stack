@@ -1,0 +1,157 @@
+1.Learn the purpose of <form> in HTML. Create a basic form structure with action and method.
+   The <form> tag is used to collect user input and send it to a server.
+     Key attributes:
+        action → where data is sent
+        method → how data is sent (GET / POST)
+     ex:
+       <form >
+        <input type="text" name="username">
+        <button type="submit">Submit</button>
+       </form>
+
+2.Practice using <input type="text">, <input type="password">, and <input type="email">. Create a login form.
+
+<h2>Login Form</h2>
+<form action="#" method="POST">
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" placeholder="Enter password"><br><br>
+
+  <button type="submit">Login</button>
+
+</form>
+
+3.Use checkboxes for multiple choices, radio buttons for single choice, and number fields for numeric input.
+   
+<h2>User Preferences</h2>
+
+<form>
+
+  <!-- Radio (single choice) -->
+  <p>Gender:</p>
+  <input type="radio" name="gender" id="male">
+  <label for="male">Male</label>
+
+  <input type="radio" name="gender" id="female">
+  <label for="female">Female</label>
+
+  <br><br>
+
+  <!-- Checkbox (multiple choice) -->
+  <p>Hobbies:</p>
+  <input type="checkbox" id="reading">
+  <label for="reading">Reading</label>
+
+  <input type="checkbox" id="sports">
+  <label for="sports">Sports</label>
+
+  <input type="checkbox" id="music">
+  <label for="music">Music</label>
+
+  <br><br>
+
+  <!-- Number -->
+  <label for="age">Age:</label>
+  <input type="number" id="age">
+
+</form>
+
+4.Learn <label> for accessibility and placeholder for hints. Connect labels with inputs using for and id.
+   ✔ for="name" connects with id="name"
+   ✔ placeholder shows hint text
+
+<label for="name">Name:</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+5.Use required to make fields mandatory. Practice building a signup form where name, email, and password are required.
+   
+<form>
+  <label>Name:</label>
+  <input type="text" required>
+
+  <label>Email:</label>
+  <input type="email" required>
+
+  <label>Password:</label>
+  <input type="password" required>
+
+  <button type="submit">Signup</button>
+</form>
+
+6.Explore built-in HTML5 validation (email format, number range, required). Test submitting forms with incorrect data.
+   ✔ Wrong email → browser shows error
+   ✔ Age outside range → blocked
+<form>
+
+  <label>Email:</label>
+  <input type="email" required>
+
+  <label>Age (18–60):</label>
+  <input type="number" min="18" max="60" required>
+
+  <button type="submit">Submit</button>
+
+</form>
+
+7.Build a registration form with text, email, password, gender (radio), hobbies (checkbox), age (number), and submit button. Include labels, placeholders, and validation.
+   
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="POST">
+
+  <!-- Name -->
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+  <!-- Email -->
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+  <!-- Password -->
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" placeholder="Enter password" required><br><br>
+
+  <!-- Gender -->
+  <p>Gender:</p>
+  <input type="radio" name="gender" id="male" required>
+  <label for="male">Male</label>
+
+  <input type="radio" name="gender" id="female">
+  <label for="female">Female</label>
+
+  <br><br>
+
+  <!-- Hobbies -->
+  <p>Hobbies:</p>
+  <input type="checkbox" id="reading">
+  <label for="reading">Reading</label>
+
+  <input type="checkbox" id="sports">
+  <label for="sports">Sports</label>
+
+  <input type="checkbox" id="music">
+  <label for="music">Music</label>
+
+  <br><br>
+
+  <!-- Age -->
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" min="18" max="60" required><br><br>
+
+  <!-- Submit -->
+  <button type="submit">Register</button>
+
+</form>
+
+</body>
+</html>

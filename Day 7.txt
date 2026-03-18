@@ -1,0 +1,116 @@
+1.Learn the difference between unordered (<ul>) and ordered (<ol>) lists. Create shopping list and steps list.
+  🔹Unordered List (<ul>)
+      Shows bullet points
+      Used when order doesn’t matter
+  🔹Ordered List (<ol>)
+      Shows numbers (1, 2, 3…)
+      Used when sequence matters
+   example:
+
+<h2>Shopping List (Unordered)</h2>
+<ul>
+  <li>Rice</li>
+  <li>Chicken</li>
+  <li>Spices</li>
+  <li>Oil</li>
+</ul>
+
+<h2>Cooking Steps (Ordered)</h2>
+<ol>
+  <li>Wash rice</li>
+  <li>Cut chicken</li>
+  <li>Cook with spices</li>
+  <li>Serve hot</li>
+</ol>
+
+2.Practice using <li> inside <ul> and <ol>. Create nested lists (list inside another list).
+   <li> = List Item
+   Nested list = To give List inside another list is called nested list
+ example:
+
+<h2>Food Menu</h2>
+<ul>
+  <li>Biryani
+    <ul>
+      <li>Chicken Biryani</li>
+      <li>Mutton Biryani</li>
+    </ul>
+  </li>
+  <li>Drinks
+    <ul>
+      <li>Pepsi</li>
+      <li>Water</li>
+    </ul>
+  </li>
+</ul>
+
+3.Learn the structure of tables. Create a simple table with rows and columns.
+   <table> → table container
+   <thead> -> table head
+   <tr> → table row
+   <td> → table data (cell)
+example:
+
+<h2>Student Table</h2>
+
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Course</td>
+  </tr>
+  <tr>
+    <td>Dinesh</td>
+    <td>20</td>
+    <td>IT</td>
+  </tr>
+</table>
+
+4.Add headers to tables using <th>. Compare difference between <td> and <th>.
+  🔹<th> (Table Header)
+      Bold text
+      Center aligned
+      Used for headings
+  🔹<td> (Table Data)
+      Normal text
+      Used for values
+example:
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Course</th>
+  </tr>
+  <tr>
+    <td>Dinesh</td>
+    <td>20</td>
+    <td>IT</td>
+  </tr>
+</table>
+
+5.Practice table attributes: colspan, rowspan, and add borders, cell spacing, and padding with CSS.
+  🔹colspan
+      Merge columns
+  🔹rowspan
+      Merge rows
+example:
+
+<h2>Advanced Table</h2>
+
+<table border="1" style="border-collapse: collapse; width: 50%;">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Details</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Dinesh</td>
+    <td>Age</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Course</td>
+    <td>IT</td>
+  </tr>
+</table>
+

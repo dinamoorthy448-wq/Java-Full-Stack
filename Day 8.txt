@@ -1,0 +1,111 @@
+1.Style an HTML snippet using different CSS selectors.
+ i)Use an element selector to:
+ii)Set all <p> elements' font color to #555 and line-height to 1.6. 
+iii)Use a class selector for .intro to: 
+Set the font-style to italic. 
+Use a class selector for .highlight to: 
+Set background color to #f0f8ff and padding to 8px. 
+Use an ID selector for #header to: 
+Set text color to #2c3e50 and font-size to 32px. 
+Add any additional style to the .box class to: 
+Add a border of 1px solid #ccc and padding of 16px.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* Element Selector */
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Class Selector - intro */
+        .intro {
+            font-style: italic;
+        }
+
+        /* Class Selector - highlight */
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 8px;
+        }
+
+        /* ID Selector - header */
+        #header {
+            color: #2c3e50;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        /* Additional class - box */
+        .box {
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="header">Welcome to CSS Styling</h1>
+
+    <div class="box">
+        <p class="intro">
+            This is an introduction paragraph styled using a class selector.
+        </p>
+
+        <p>
+            This is a normal paragraph styled using an element selector.
+        </p>
+
+        <p class="highlight">
+            This paragraph is highlighted using another class selector.
+        </p>
+    </div>
+
+</body>
+</html>
+
+How to link it in HTML:
+  <link rel="stylesheet" href="styles.css">
+
+2..Write CSS in styles.css to meet the following requirements:
+
+
+/* Element Selector */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Class Selector - intro */
+.intro {
+    font-style: italic;
+}
+
+/* Class Selector - highlight */
+.highlight {
+    background-color: #f0f8ff;
+    padding: 8px;
+}
+
+/* ID Selector - header */
+#header {
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+/* Additional class - box */
+.box {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+

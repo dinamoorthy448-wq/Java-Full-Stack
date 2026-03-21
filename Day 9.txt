@@ -1,0 +1,38 @@
+1. Create a div with a class .box. 
+2. Inside the .box, place some text content. 
+3. Style the .box to clearly show: 
+4. margin: space outside the box. 
+5. border: a visible outline. 
+6. padding: space inside the border, around the content. 
+7. content: the actual text
+
+HTML&CSS ex code:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+    width: 300px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 5px solid #333;
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    🌟 Mahendra Singh Dhoni 🌟
+</div>
+
+</body>
+</html>

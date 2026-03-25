@@ -1,0 +1,108 @@
+1.Colors-Change text and border colors
+
+<p style="color: green; border: 2px solid red;">
+    This text is green with a red border.
+</p>
+
+2.Backgrounds -Set background colors and images
+
+<div style="background-color: lightblue; padding: 20px;">
+    This has a light blue background color.
+</div>
+
+<div style="background-image: url('https://via.placeholder.com/150'); 
+            height: 150px; color: white;">
+    Background image applied here.
+</div>
+
+3.Fonts-Apply different font families and sizes
+
+<p style="font-family: Arial; font-size: 18px;">
+    This text uses Arial font and size 18px.
+</p>
+
+<p style="font-family: 'Courier New'; font-size: 22px;">
+    This text uses Courier New font and larger size.
+</p>
+
+4.Text Styles-Use bold, italic, underline, etc.
+
+<p style="font-weight: bold;">
+    This is bold text.
+</p>
+
+<p style="font-style: italic;">
+    This is italic text.
+</p>
+
+<p style="text-decoration: underline;">
+    This is underlined text.
+</p>
+
+example code:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Basics Demo</title>
+
+    <style>
+        /* 1. Colors */
+        .color-box {
+            color: blue;               
+            border: 3px solid red;       
+            padding: 10px;
+        }
+
+        /* 2. Backgrounds */
+        .background-box {
+            background-color: lightyellow;   
+            background-image: url('https://via.placeholder.com/150');
+            background-repeat: no-repeat;
+            background-position: right;
+            padding: 20px;
+        }
+
+        /* 3. Fonts */
+        .font-box {
+            font-family: Arial, sans-serif;  
+            font-size: 20px;                 
+        }
+
+        /* 4. Text Styles */
+        .text-style-box {
+            font-weight: bold;     
+            font-style: italic;    
+            text-decoration: underline; 
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>CSS Styling Examples</h2>
+
+    <div class="color-box">
+        This text has a blue color and red border.
+    </div>
+
+    <br>
+
+    <div class="background-box">
+        This box has a background color and image.
+    </div>
+
+    <br>
+
+    <div class="font-box">
+        This text uses a different font and size.
+    </div>
+
+    <br>
+
+    <div class="text-style-box">
+        This text is bold, italic, and underlined.
+    </div>
+
+</body>
+</html>

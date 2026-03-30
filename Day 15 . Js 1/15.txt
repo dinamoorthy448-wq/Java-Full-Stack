@@ -1,0 +1,84 @@
+1.What is JavaScript? Write a simple script. 
+   -->JavaScript is a programming language used to make web pages interactive (like buttons, animations, dynamic content).
+ ex:
+   alert("Welcome to JavaScript!");
+
+
+2.Add a script tag inside HTML and print 'Hello JS'. 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+
+    <h1>JavaScript Demo</h1>
+
+    <script>
+        document.write("Hello JS");
+    </script>
+
+</body>
+</html>
+
+3.Log your name and age in console. 
+
+console.log("Name: Dinesh");
+console.log("Age: 25");
+
+4.Write single-line and multi-line comments. 
+
+// This is a single-line comment
+
+/*
+This is a multi-line comment
+You can write multiple lines here
+*/
+
+5.Integrate HTML with Javascript and display a body with a 'KKR' jersey color and a Box inside it with 'CSK' jersey color and apply the styles with your own creativity.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KKR vs CSK Theme</title>
+    <style>
+        body {
+            background-color: purple; /* KKR color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: yellow; /* CSK color */
+            width: 250px;
+            height: 150px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0 0 20px gold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="teamBox">
+        CSK
+    </div>
+
+    <script>
+        // Change text dynamically
+        document.getElementById("teamBox").innerHTML = "CSK 💛";
+
+        // Console message
+        console.log("KKR vs CSK Theme Loaded");
+    </script>
+
+</body>
+</html>

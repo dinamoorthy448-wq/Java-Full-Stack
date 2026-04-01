@@ -1,0 +1,118 @@
+Task 1:
+
+a. Check if a number is positive or negative.
+
+let num = -5;
+
+if (num > 0) {
+    console.log("Positive number");
+} else if (num < 0) {
+    console.log("Negative number");
+} else {
+    console.log("Zero");
+}
+
+b. Create a switch to print days of the week.
+
+let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("Invalid day");
+}
+
+
+
+Task 2:
+
+Story Line 1 - A Crew is travelling on a Boat. Totally 4 Members.
+a. Create a list of members inside a div. Give id to both list and div.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boat Crew</title>
+</head>
+<body>
+
+<div id="crewContainer">
+    <h2>Crew Members</h2>
+    <ul id="crewList"></ul>
+</div>
+
+<script>
+    // Crew members
+    let crew = ["Captain Jack", "Sailor Tom", "Navigator Anna", "Engineer Mike"];
+
+    // Select list
+    let list = document.getElementById("crewList");
+
+    // Add members to list
+    crew.forEach(function(member) {
+        let li = document.createElement("li");
+        li.textContent = member;
+        list.appendChild(li);
+    });
+</script>
+
+</body>
+</html>
+
+Story Line 2 - Asking route to both Jack and Alice
+
+b. On clicking Jack button, display the route said by Jack.
+
+c. On clicking Alice button, display the route said by Alice
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Route Finder</title>
+</head>
+<body>
+
+    <h2>Ask for Route</h2>
+
+    <!-- Buttons -->
+    <button onclick="showJackRoute()">Ask Jack</button>
+    <button onclick="showAliceRoute()">Ask Alice</button>
+
+    <!-- Output -->
+    <p id="result"></p>
+
+    <script>
+        function showJackRoute() {
+            document.getElementById("result").innerText =
+                "Jack says: Take the north route across the island.";
+        }
+
+        function showAliceRoute() {
+            document.getElementById("result").innerText =
+                "Alice says: Go through the south path, it's quicker!";
+        }
+    </script>
+
+</body>
+</html>
+

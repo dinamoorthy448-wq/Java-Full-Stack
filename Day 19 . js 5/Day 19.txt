@@ -1,0 +1,46 @@
+1.Write a function to add two numbers. 
+
+function add(a, b) {
+    return a + b;
+}
+console.log("Addition:", add(5, 3));
+
+2.Write a function expression to multiply two numbers. 
+
+const multiply = function(a, b) {
+    return a * b;
+};
+console.log("Multiplication:", multiply(5, 3));
+
+3.Write an arrow function to subtract two numbers.
+
+const subtract = (a, b) => {
+    return a - b;
+};
+console.log("Subtraction:", subtract(5, 3)); 
+
+4.Write a function with parameters and return a value. 
+
+function greet(name) {
+    return "Hello " + name + "!";
+}
+console.log(greet("Dinesh"));
+
+5.Demonstrate global vs local scope.
+
+// Global variable
+let globalVar = "I am Global";
+
+function checkScope() {
+    // Local variable
+    let localVar = "I am Local";
+
+    console.log(globalVar); // Accessible
+    console.log(localVar);  // Accessible inside function
+}
+
+checkScope();
+
+console.log(globalVar); // Accessible outside
+
+// console.log(localVar); ❌ Error (localVar is not defined outside)

@@ -1,0 +1,36 @@
+1.Use push, pop, shift, unshift on an array. 
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+console.log("Original Array:", fruits);
+
+// push → adds element at the end
+fruits.push("Orange");
+console.log("After push:", fruits);
+
+// pop → removes last element
+fruits.pop();
+console.log("After pop:", fruits);
+
+// unshift → adds element at the beginning
+fruits.unshift("Grapes");
+console.log("After unshift:", fruits);
+
+// shift → removes first element
+fruits.shift();
+console.log("After shift:", fruits);
+
+2.Print all elements of an array using for loop.
+
+let numbers = [10, 20, 30, 40, 50];
+
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}  
+
+output:
+10
+20
+30
+40
+50

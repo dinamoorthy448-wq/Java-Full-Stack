@@ -1,0 +1,23 @@
+1.Create an object with name, age, and method sayHello(). 
+let person = {
+    name: "Dinesh",
+    age: 21,
+    sayHello: function() {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+
+2.Access and modify object properties. 
+// Access properties
+console.log(person.name); // Dinesh
+console.log(person.age);  // 21
+
+// Modify properties
+person.age = 22;
+person.name = "Kumar";
+
+console.log(person.name); // Kumar
+console.log(person.age);  // 22
+
+3.Call an object method.
+person.sayHello(); // Hello, my name is Kumar

@@ -1,0 +1,31 @@
+1.Add a button click event. 
+<button onclick="showMessage()">Click Me</button>
+
+<script>
+function showMessage() {
+  alert("Button Clicked!");
+}
+</script>
+
+2.Show input value when typing.
+<input type="text" id="name" oninput="showValue()">
+
+<p id="output"></p>
+
+<script>
+function showValue() {
+  let value = document.getElementById("name").value;
+  document.getElementById("output").innerText = value;
+}
+</script> 
+
+3.Add event listener to a button.
+<button id="btn">Click Me</button>
+
+<script>
+let button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+  alert("Event Listener Working!");
+});
+</script>

@@ -1,0 +1,29 @@
+1.Rewrite code with let and const.
+// Old way (var)
+var name = "Dinesh";
+var age = 20;
+
+// New way
+const name = "Dinesh"; // use const if value won't change
+let age = 20;          // use let if value can change
+
+age = 21; // allowed
+// name = "Kumar"; ❌ not allowed (const) 
+
+2.Use template literals with variables.
+const name = "Dinesh";
+const age = 21;
+
+// Old way
+console.log("My name is " + name + " and I am " + age + " years old.");
+
+// Template literals (modern way)
+console.log(`My name is ${name} and I am ${age} years old.`); 
+
+3.Create a function with default parameter values.
+function greet(name = "Guest") {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet("Dinesh")); // Hello, Dinesh!
+console.log(greet());         // Hello, Guest!

@@ -1,0 +1,107 @@
+1.Write a program to filter a list of names. Use textbox, and ul. On typing the letters in the textbox the list should be filtered. 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filter Names</title>
+</head>
+<body>
+
+<h3>Search Name:</h3>
+<input type="text" id="searchBox" placeholder="Type name...">
+
+<ul id="nameList"></ul>
+
+<script>
+let names = ["Dinesh", "Kumar", "Arun", "Priya", "Divya", "Rahul"];
+
+let ul = document.getElementById("nameList");
+
+function showNames(list) {
+  ul.innerHTML = "";
+  list.forEach(name => {
+    let li = document.createElement("li");
+    li.textContent = name;
+    ul.appendChild(li);
+  });
+}
+
+showNames(names);
+
+document.getElementById("searchBox").addEventListener("input", function() {
+  let value = this.value.toLowerCase();
+
+  let filtered = names.filter(name =>
+    name.toLowerCase().includes(value)
+  );
+
+  showNames(filtered);
+});
+</script>
+
+</body>
+</html>
+
+2.Display a list of cards containing movie name and image using javascript.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Cards</title>
+  <style>
+    .card {
+      width: 150px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+<h3>Movie List</h3>
+
+<div id="movieContainer"></div>
+
+<script>
+let movies = [
+  {
+    name: "Leo",
+    image: "https://via.placeholder.com/150x200?text=Leo"
+  },
+  {
+    name: "Jailer",
+    image: "https://via.placeholder.com/150x200?text=Jailer"
+  },
+  {
+    name: "Vikram",
+    image: "https://via.placeholder.com/150x200?text=Vikram"
+  }
+];
+
+let container = document.getElementById("movieContainer");
+
+movies.forEach(movie => {
+  let card = document.createElement("div");
+  card.className = "card";
+
+  let img = document.createElement("img");
+  img.src = movie.image;
+
+  let title = document.createElement("h4");
+  title.textContent = movie.name;
+
+  card.appendChild(img);
+  card.appendChild(title);
+
+  container.appendChild(card);
+});
+</script>
+
+</body>
+</html>s 

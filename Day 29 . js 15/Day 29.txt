@@ -1,0 +1,46 @@
+1.Show synchronous vs asynchronous execution. 
+
+--->Synchronous (runs line by line)
+
+console.log("Start");
+
+console.log("Task 1");
+console.log("Task 2");
+
+console.log("End");
+
+o/p:
+   Start
+Task 1
+Task 2
+End
+
+--->Asynchronous (does not block execution)
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Task 1 (Async)");
+}, 2000);
+
+console.log("End");
+
+o/p:
+   Start
+End
+Task 1 (Async)   // comes after 2 seconds
+
+2.Print a message after 2 seconds. 
+
+setTimeout(() => {
+  console.log("Hello after 2 seconds");
+}, 2000);
+
+3.Print a counter every 1 second.
+
+let count = 1;
+
+setInterval(() => {
+  console.log("Count:", count);
+  count++;
+}, 1000);

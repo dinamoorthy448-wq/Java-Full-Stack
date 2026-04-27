@@ -1,0 +1,75 @@
+1.Create a Project for Online Shopping. Add Products to the Cart and the Count should increase as the Products are added to the Cart. 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+</head>
+<body>
+
+<h2>🛒 Online Shopping</h2>
+
+<h3>Cart Count: <span id="cart-count">0</span></h3>
+
+<div id="products"></div>
+
+<script>
+  const products = [
+    { id: 1, name: "Shirt", price: 500 },
+    { id: 2, name: "Shoes", price: 1000 },
+    { id: 3, name: "Watch", price: 1500 }
+  ];
+
+  let cartCount = 0;
+
+  const productContainer = document.getElementById("products");
+
+  function displayProducts() {
+    products.forEach(product => {
+      const div = document.createElement("div");
+
+      div.innerHTML = `
+        <p>${product.name} - ₹${product.price}</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      `;
+
+      productContainer.appendChild(div);
+    });
+  }
+
+  function addToCart() {
+    cartCount++;
+    document.getElementById("cart-count").textContent = cartCount;
+  }
+
+  displayProducts();
+</script>
+
+</body>
+</html>
+
+2.Write a function that accepts a callback.
+
+function processUser(name, callback) {
+  console.log("Processing user:", name);
+  callback();
+}
+
+// Callback function
+function done() {
+  console.log("Done!");
+}
+
+// Call function
+processUser("Dinesh", done);
+
+--->Arrow Function Callback Version
+
+function greetUser(name, callback) {
+  console.log("Hello", name);
+  callback();
+}
+
+greetUser("Dinesh", () => {
+  console.log("Welcome!");
+});

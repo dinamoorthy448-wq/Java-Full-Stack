@@ -1,0 +1,44 @@
+1.Write a function that accepts a callback. 
+
+function doTask(name, callback) {
+  console.log("Task started for", name);
+  callback();
+}
+
+// Callback function
+function finishTask() {
+  console.log("Task completed!");
+}
+
+doTask("Dinesh", finishTask);
+
+--->Using Arrow Function
+
+doTask("Dinesh", () => {
+  console.log("Callback executed!");
+});
+
+2.Create a promise that resolves or rejects. 
+
+const myPromise = new Promise((resolve, reject) => {
+  let success = true;
+
+  if (success) {
+    resolve("Operation successful!");
+  } else {
+    reject("Operation failed!");
+  }
+});
+
+3.Handle promise using then and catch.
+
+myPromise
+  .then(result => {
+    console.log(result);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+
+

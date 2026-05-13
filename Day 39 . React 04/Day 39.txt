@@ -1,0 +1,73 @@
+ 1. Render a list of products using `.map()` with stable `key` props.
+
+ 2. Show 'No products available' when the list is empty using a conditional (ternary/&&).
+
+ 3. Implement a filter input that filters the rendered list by product name.
+
+ 4. Highlight an item on hover using conditional class application.
+
+// App.jsx
+import { useState } from "react";
+import "./App.css";
+
+function App() {
+
+  // Product List
+  const productsData = [
+    { id: 1, name: "Laptop" },
+    { id: 2, name: "Mobile" },
+    { id: 3, name: "Headphones" },
+    { id: 4, name: "Keyboard" },
+  ];
+
+  // State for filter input
+  const [search, setSearch] = useState("");
+
+  // Filter products
+  const filteredProducts = productsData.filter((product) =>
+    product.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div className="container">
+
+      <h1>Product List</h1>
+
+      {/* Filter Input */}
+      <input
+        type="text"
+        placeholder="Search product..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="search-input"
+      />
+
+      {/* Conditional Rendering */}
+      {
+        filteredProducts.length > 0 ? (
+
+          <ul className="product-list">
+
+            {filteredProducts.map((product) => (
+              <li
+                key={product.id}
+                className="product-item"
+              >
+                {product.name}
+              </li>
+            ))}
+
+          </ul>
+
+        ) : (
+
+          <p>No products available</p>
+
+        )
+      }
+
+    </div>
+  );
+}
+
+export default App;

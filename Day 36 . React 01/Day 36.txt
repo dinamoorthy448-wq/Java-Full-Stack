@@ -1,0 +1,102 @@
+-------1. Build a reusable `Button` component that accepts `label` and `onClick` props.
+
+// Button.jsx
+function Button({ label, onClick }) {
+  return (
+    <button onClick={onClick}>
+      {label}
+    </button>
+  );
+}
+
+export default Button;
+
+-------2. Create `Header` and `Footer` components and pass props to customize text.
+
+// Header.jsx
+function Header({ title }) {
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
+}
+
+export default Header;
+
+// Footer.jsx
+function Footer({ text }) {
+  return (
+    <footer>
+      <p>{text}</p>
+    </footer>
+  );
+}
+
+export default Footer;
+
+
+-------3. Build a `Layout` component that renders `props.children` between header and footer.
+
+// Layout.jsx
+import Header from "./Header";
+import Footer from "./Footer";
+
+function Layout({ children }) {
+  return (
+    <div>
+      <Header title="My React App" />
+
+      <main>
+        {children}
+      </main>
+
+      <Footer text="© 2026 My Website" />
+    </div>
+  );
+}
+
+export default Layout;
+
+-------4. Create a `UserCard` component that displays a user's name and age from props.
+
+// UserCard.jsx
+function UserCard({ name, age }) {
+  return (
+    <div>
+      <h2>{name}</h2>
+      <p>Age: {age}</p>
+    </div>
+  );
+}
+
+export default UserCard;
+
+-------5. Refactor `App.jsx` to use the new components and render a small page.
+
+// App.jsx
+import Layout from "./Layout";
+import Button from "./Button";
+import UserCard from "./UserCard";
+
+function App() {
+
+  const handleClick = () => {
+    alert("Button Clicked!");
+  };
+
+  return (
+    <Layout>
+
+      <UserCard name="Dinesh" age={21} />
+
+      <Button
+        label="Click Me"
+        onClick={handleClick}
+      />
+
+    </Layout>
+  );
+}
+
+export default App;s

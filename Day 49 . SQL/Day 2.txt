@@ -1,0 +1,46 @@
+CREATE DATABASE companyDB;
+
+USE companyDB;
+
+-- Create employees table with constraints
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    salary DECIMAL(10,2) DEFAULT 30000
+);
+
+INSERT INTO employees (id, name, email, salary)
+VALUES
+(1, 'Dinesh', 'dinesh@gmail.com', 45000),
+(2, 'Vijay', 'vijay@gmail.com', 50000),
+(3, 'Surya', 'surya@gmail.com', 40000),
+(4, 'Ajith', 'ajith@gmail.com', 55000),
+(5, 'Karthi', 'karthi@gmail.com', 35000);
+
+INSERT INTO employees (id, name, email, salary)
+VALUES
+(6, 'Arun', 'vijay@gmail.com', 42000);
+DROP TABLE employees;
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    salary DECIMAL(10,2) DEFAULT 30000,
+    CHECK (salary > 0)
+);
+
+-- Valid Record
+
+INSERT INTO employees
+VALUES (1, 'Dinesh', 'dinesh@gmail.com', 40000);
+
+-- Invalid Record
+
+INSERT INTO employees
+VALUES (2, 'Arun', 'arun@gmail.com', -1000);
+
+DESC employees;
+SELECT * FROM employees;

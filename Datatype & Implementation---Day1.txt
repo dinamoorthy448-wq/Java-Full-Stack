@@ -1,0 +1,87 @@
+1.EmployeesDetails
+
+public class EmployeeDetails
+{
+   public static void main(string[] args)
+{
+       int employeesId=1001;
+       byte Age=25;
+       double Salary=50000;
+       char PerformanceGrade='A';
+       Boolean Full-TimeStatus=true;
+
+       system.out.println("EmployeeDetails");
+       system.out.println("Employees:"+EmployeeId);
+       system.out.println("Age:+"Age);
+       system.out.println("Salary:+"Salary);
+       system.out.printlt("Grade:+"performanceGrade);
+       system.out.println("full-time status:+"Full-TimeStatus);
+ }
+}
+
+2.ProductDetails
+
+public class ProductDetails
+{
+   public static void main(srting[] args)
+{
+   int ProductID=2001;
+   decimal ProductPrice=25000;
+   float DiscountPercentage=15.25f;
+   float ProductRating=4.8f;
+   Boolean isAvailability=true;
+
+  system.out.println("ProductDetails");
+  system.out.println("ProductID:+"productID);
+  system.out.println("Product Price:+"ProductPrice);
+  system.out.println("Discount Percentage:+"DiscountPercentage);
+  system.out.println("ProductRating:+"ProductRating);
+  System.out.println("Availability status:+"isAvailability);
+
+  }
+}
+
+3.Vehicle Registration
+
+
+public class vehicleRegistration
+{
+  public static void main(string[] args)
+{
+  int VehicleNumber=58649;
+  short EngineCapacity=5879;
+  float Mileage=19.5f;
+  char FuelType='p';
+  Boolean InsuranceStatus=true;
+
+  system.out.println("vehicleRegistration");
+  system.out.println("vehicleNumber:+"vehicleNumber);
+  system.out.println("EngineCapacity:+"EngineCapacity+"cc");
+  system.out.println("Mileage:+"Mileage+"km/1");
+  system.out.println("FuelType:+"FuelType);
+  system.out.println("InsuranceStatus:+"InsuranceStatus);
+
+  }
+}
+
+
+4.Hospital patient Record
+
+public class HospitalPatientRecord
+{
+   public static void main(string[] args)
+{
+   byte patientAge:67;
+   float weight: 68.75kg;
+   char bloodGroupInitial:O;
+   boolean icuAdmissionStatus:false;
+   byte numberofMedicines:12;
+
+   system.out.println("HospitalPatientRecord");
+   system.out.println("patient Age:+"patientAge);
+   system.out.println("weight:+"weight="kg");
+   system.out.println("blood group inital:+"bloodGroupInitial);
+   system.out.println("ICU admission status:+"icuAdmissionStatus);
+   system.out.println("Number of medicines:+"numberofMedicines);
+  }
+}

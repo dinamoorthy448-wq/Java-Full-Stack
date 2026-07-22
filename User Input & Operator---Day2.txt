@@ -1,0 +1,155 @@
+1. Employee Salary Calculation
+
+public class Employeesalary
+{
+ public static void main(string[] args)
+{
+  scanner sc = new scanner(system.in);
+ 
+  system.out.println("Enter Basic Salary:");
+  double basicsalary = sc.nextdouble();
+
+  double hra = basic salary * 20/100;
+  double da = basicsalary * 10/100;
+  double pf = basicsalary* 5/100;
+
+  double grossSalary = basicsalary + hra + da;
+  double netsalary = basicsalary - pf;
+
+  system.out.println("Basic salary:" + basicsalary);
+  system.out.println("HRA:" + hra);
+  system.out.println("DA:" + da);
+  system.out.println("PF:" + pf);
+  system.out.println("GrossSalary:" + grosssalary);
+  system.out.println("Net salary:" + netsalary);
+
+  sc.close();
+ }
+}
+
+2. Shopping Bill with GST and Discount
+
+public class ShoppingBill 
+{
+ public static void main(String[] args)
+{
+  Scanner sc = new Scanner(System.in);
+
+  System.out.print("Enter Price of Product 1: ");
+  double p1 = sc.nextDouble();
+
+   System.out.print("Enter Price of Product 2: ");
+   double p2 = sc.nextDouble();
+
+   System.out.print("Enter Price of Product 3: ");
+   double p3 = sc.nextDouble();
+
+   double total = p1 + p2 + p3;
+   double discount = total * 10 / 100;
+   double amountAfterDiscount = total - discount;
+   double gst = amountAfterDiscount * 18 / 100;
+   double finalAmount = amountAfterDiscount + gst;
+
+   System.out.println("Total Amount : " + total);
+   System.out.println("Discount : " + discount);
+   System.out.println("GST : " + gst);
+   System.out.println("Final Payable Amount : " + finalAmount);
+
+   sc.close();
+  }
+}
+
+3. Student Percentage and Average
+
+public class StudentMarks 
+{
+ public static void main(String[] args) 
+{
+  Scanner sc = new Scanner(System.in);
+
+  System.out.print("Enter Subject 1 Marks: ");
+  double s1 = sc.nextDouble();
+
+  System.out.print("Enter Subject 2 Marks: ");
+  double s2 = sc.nextDouble();
+
+  System.out.print("Enter Subject 3 Marks: ");
+  double s3 = sc.nextDouble();
+
+  System.out.print("Enter Subject 4 Marks: ");
+  double s4 = sc.nextDouble();
+
+  System.out.print("Enter Subject 5 Marks: ");
+  double s5 = sc.nextDouble();
+
+  double total = s1 + s2 + s3 + s4 + s5;
+  double average = total / 5;
+  double percentage = total / 5;
+
+  System.out.println("Total Marks : " + total);
+  System.out.println("Average : " + average);
+  System.out.println("Percentage : " + percentage + "%");
+
+  sc.close();
+ }
+}
+
+4. Electricity Bill Calculation
+
+public class ElectricityBill 
+{
+ public static void main(String[] args)
+{
+  Scanner sc = new Scanner(System.in);
+
+  System.out.print("Enter Units Consumed: ");
+  double units = sc.nextDouble();
+
+  System.out.print("Enter Charge Per Unit: ");
+  double chargePerUnit = sc.nextDouble();
+
+  System.out.print("Enter Fixed Meter Charge: ");
+  double meterCharge = sc.nextDouble();
+
+  double energyCharge = units * chargePerUnit;
+  double subtotal = energyCharge + meterCharge;
+  double tax = subtotal * 5 / 100;
+  double finalBill = subtotal + tax;
+
+  System.out.println("Energy Charge : " + energyCharge);
+  System.out.println("Meter Charge : " + meterCharge);
+  System.out.println("Subtotal : " + subtotal);
+  System.out.println("Electricity Tax : " + tax);
+  System.out.println("Final Electricity Bill : " + finalBill);
+
+  sc.close();
+ }
+}
+
+5. Banking Interest Calculation
+
+public class SimpleInterest 
+{
+ public static void main(String[] args)
+{
+ Scanner sc = new Scanner(System.in);
+
+ System.out.print("Enter Principal Amount: ");
+ double principal = sc.nextDouble();
+
+ System.out.print("Enter Rate of Interest: ");
+ double rate = sc.nextDouble();
+
+ System.out.print("Enter Time (Years): ");
+ double time = sc.nextDouble();
+
+ double interest = principal * rate * time / 100;
+ double maturityAmount = principal + interest;
+
+  System.out.println("Principal Amount : " + principal);
+  System.out.println("Simple Interest : " + interest);
+  System.out.println("Maturity Amount : " + maturityAmount);
+
+  sc.close();
+ }
+}

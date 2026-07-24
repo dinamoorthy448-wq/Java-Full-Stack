@@ -1,0 +1,126 @@
+1.Verify Username, Password, and OTP
+
+public class LoginVerification
+{
+    public static void main(String[] args) 
+{
+
+        Scanner sc = new Scanner(System.in);
+
+        String correctUsername = "admin";
+        String correctPassword = "java123";
+        int correctOTP = 123456;
+
+        System.out.print("Enter Username: ");
+        String username = sc.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = sc.nextLine();
+
+        System.out.print("Enter OTP: ");
+        int otp = sc.nextInt();
+
+        if (!username.equals(correctUsername)) {
+            System.out.println("Invalid Username");
+        } 
+        else if (!password.equals(correctPassword)) {
+            System.out.println("Invalid Password");
+        } 
+        else if (otp != correctOTP) {
+            System.out.println("Invalid OTP");
+        } 
+        else 
+        {
+            System.out.println("Login Successful");
+        }
+
+        sc.close();
+    }
+}
+
+2. ATM Cash Withdrawal
+
+public class ATMWithdrawal {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int correctPin = 1234;
+        double balance = 20000;
+
+        System.out.print("Enter PIN: ");
+        int pin = sc.nextInt();
+
+        System.out.print("Enter Withdrawal Amount: ");
+        double amount = sc.nextDouble();
+
+        if (pin != correctPin) {
+            System.out.println("Incorrect PIN");
+        } 
+        else if (amount > balance) {
+            System.out.println("Insufficient Balance");
+        } 
+        else if (amount % 100 != 0) {
+            System.out.println("Amount should be a multiple of 100");
+        } 
+        else {
+            balance = balance - amount;
+            System.out.println("Withdrawal Successful");
+            System.out.println("Remaining Balance: " + balance);
+        }
+
+        sc.close();
+    }
+}
+
+3. Student Scholarship Eligibility
+
+public class Scholarship {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Marks: ");
+        int marks = sc.nextInt();
+
+        System.out.print("Enter Attendance (%): ");
+        int attendance = sc.nextInt();
+
+        System.out.print("Enter Number of Arrears: ");
+        int arrears = sc.nextInt();
+
+        if (marks >= 85 && attendance >= 90 && arrears == 0) {
+            System.out.println("Eligible for Scholarship");
+        } else {
+            System.out.println("Not Eligible for Scholarship");
+        }
+
+        sc.close();
+    }
+}
+
+4. Employee Bonus Eligibility
+
+public class EmployeeBonus {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Experience (Years): ");
+        int experience = sc.nextInt();
+
+        System.out.print("Enter Performance Rating: ");
+        double rating = sc.nextDouble();
+
+        System.out.print("Enter Attendance (%): ");
+        int attendance = sc.nextInt();
+
+        if (experience >= 5 && rating >= 4 && attendance >= 95) {
+            System.out.println("Eligible for Bonus");
+        } else {
+            System.out.println("Not Eligible for Bonus");
+        }
+
+        sc.close();
+    }
+}
